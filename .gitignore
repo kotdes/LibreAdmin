@@ -1,0 +1,16 @@
+# Local files
+/Packages
+ServerPackages
+DevPackages
+
+# System junks
+sourcemap.json
+.DS_Store
+.luaurc
+
+# Project place file
+/LibreAdmin.rbxlx
+
+# Roblox Studio lock files
+/*.rbxlx.lock
+/*.rbxl.lock
