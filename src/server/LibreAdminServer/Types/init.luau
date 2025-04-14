@@ -25,4 +25,16 @@ export type ModuleObject = {
     Properties: {}
 }
 
+export type ModuleObjectContainer = {
+    _list: {
+        [string]: ModuleObject,
+    },
+
+    Add: (self: ModuleObjectContainer, module: ModuleScript, props: {}) -> (string),
+    Remove: (self: ModuleObjectContainer, identifier: string) -> (),
+    List: (self: ModuleObjectContainer) -> ({ [string]: ModuleObject }),
+    Eval: (self: ModuleObjectContainer, client: Player, identifer: string, ...any) -> (...any),
+    new: () -> (ModuleObjectContainer)
+}
+
 return {}
